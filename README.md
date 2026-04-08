@@ -5,6 +5,7 @@ Lopaka is an open-source graphics editor designed to create pixel-perfect interf
 This fork specifically ports the original web-based Lopaka tool into a **standalone application**, providing a more integrated experience for local firmware development.
 
 ![Lopaka App Interface](Lapoka_app.jpg)
+![Lopaka App Interface](Lapoka_App_2.jpg)
 
 ## 🚀 Key Features
 
