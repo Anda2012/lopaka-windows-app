@@ -9,7 +9,7 @@ This fork specifically ports the original web-based Lopaka tool into a **standal
 ## 🚀 Key Features
 
 * **Pixel-Perfect Editor:** Design directly for small-scale embedded displays.
-* **Instant Code Generation:** Generate C/C++ source code for Arduino, ESP32, or STM32 projects.
+* **Instant Code Generation:** Generate C/C++ and MicroPython source code for Arduino, ESP32, or STM32 projects.
 * **Standalone Workflow:** Run as a dedicated app with offline support and local file access.
 * **Dynamic Shapes & Fonts:** Full support for popular embedded fonts and custom drawing tools.
 * **Image Conversion:** Auto-generate XBMP graphics from your own images.
