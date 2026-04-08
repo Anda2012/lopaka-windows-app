@@ -9,7 +9,7 @@ import pugTemplatePlugin from './vite-plugins/pug-template';
 import svgComponentPlugin from './vite-plugins/svg-component';
 
 export default defineConfig({
-    base: '/',
+    base: './',
     plugins: [
         vue(),
         basicSsl(),
