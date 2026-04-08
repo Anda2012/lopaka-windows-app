@@ -1,105 +1,36 @@
-# Lopaka — Stunning graphics for embedded screens
+# Lopaka — Stunning Graphics Editor (App Port)
 
-Lopaka is an open-source graphics editor aimed at providing an interface for creating graphics for [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI), [U8g2](https://github.com/olikraus/u8g2), [AdafruitGFX](https://github.com/adafruit/Adafruit-GFX-Library) and [Flipper Zero](https://flipperzero.one/). Compatible with [M5GFX](https://github.com/m5stack/M5GFX), [LovyanGFX](https://github.com/lovyan03/LovyanGFX), [Watchy](https://github.com/sqfmi/Watchy) and many others.
+Lopaka is an open-source graphics editor designed to create pixel-perfect interfaces for embedded screens including **TFT_eSPI**, **U8g2**, **AdafruitGFX**, and **Flipper Zero**. 
 
-Draw any graphics and use generated code in your Arduino, ESP32 or STM32project!
+This fork specifically ports the original web-based Lopaka tool into a **standalone application**, providing a more integrated experience for local firmware development.
 
-![Lopaka Graphics Editor Screenshot](lopaka-screenshot.png)
+![Lopaka App Interface](Lapoka_app.jpg)
 
-## Table of Contents
+## 🚀 Key Features
 
-- [Features](#features)
-- [Installation](#installation)
-- [Credits](#credits)
-- [How to Contribute](#how-can-you-help)
+* **Pixel-Perfect Editor:** Design directly for small-scale embedded displays.
+* **Instant Code Generation:** Generate C/C++ source code for Arduino, ESP32, or STM32 projects.
+* **Standalone Workflow:** Run as a dedicated app with offline support and local file access.
+* **Dynamic Shapes & Fonts:** Full support for popular embedded fonts and custom drawing tools.
+* **Image Conversion:** Auto-generate XBMP graphics from your own images.
+* **Live Preview:** Real-time previewing for Flipper Zero and other hardware targets.
 
-## Features
+## 📟 Supported Platforms
 
-[Release notes](https://github.com/sbrin/lopaka/releases)
+* **Frameworks:** TFT_eSPI, u8g2, AdafruitGFX, ESPHome (coming soon).
+* **Hardware:** Flipper Zero, Inkplate, Watchy, M5Stack (M5GFX), LovyanGFX.
 
-[Keyboard shortcuts](https://github.com/sbrin/lopaka/wiki/Keyboard-shortcuts)
+## 🛠 Installation
 
-* pixel perfect editor
-* various screen sizes
-* many draw shapes and tools
-* popular fonts support
-* use custom images
-* auto-generate XBMP graphics
-* move, resize, edit elements
-* generate the source code in C/C++
-* FlipperZero live preview
-* select zoom scale
+This port is built using **VueJS 3** and **Vite**.
 
-## Supported platforms
-* TFT_eSPI
-* u8g2
-* AdafruitGFX
-* ESPHome (coming soon)
-* FlipperZero
-* Inkplate, Watchy
+### For Users
+Download the latest executable for your operating system from the [Releases](https://github.com) page.
 
+### For Developers
+If you want to build the app from source, ensure you have [pnpm](https://pnpm.io) installed.
 
-## Cloud App
-
-We have a fork of this project deployed to CloudFlare pages:
-
-[https://lopaka.app](https://lopaka.app)
-
-
-## Installation
-
-Lopaka is made with VueJS 3 and Vite build tool.
-
-### Using docker-compose
-
-```
-docker-compose up --build
-```
-
-### Using pnpm (install pnpm first)
-
-```
-pnpm install
-```
-
-#### Development server
-```
-pnpm dev
-```
-
-#### Production build
-
-```
-pnpm build
-```
-
-## Credits
-
-Thanks to all the contributions from the community. Special thanks go out to:
-
-- [deadlink](https://github.com/deadlink)
-- [sbrin](https://github.com/sbrin)
-- [gaai](https://github.com/Gaai)
-- [alploskov](https://github.com/alploskov)
-- [bjornd](https://github.com/bjornd)
-
-And many others who've contributed in various ways.
-
-For a full list of contributors, see the [contributors graph](https://github.com/sbrin/lopaka/graphs/contributors).
-
-
-## How can you help
-
-Users feedback is the most precious thing for us. Feel free to start a [Discussion](https://github.com/sbrin/lopaka/discussions), [submit an Issue](https://github.com/sbrin/lopaka/issues), or fill in the [Feedback form](https://airtable.com/apps27BkejrUF0DWT/shryaJaGovGUA03XA).
-
-**Like, share and subscribe is the easiest way to endorse this project.**
-
-Follow us on [Twitter](https://twitter.com/lopaka_app) and [Instagram](https://www.instagram.com/lopaka_app/). Join our community in [Discord](https://discord.com/invite/7NhZG9AANb).
-
-If you're embedded engineer or GUI designer or just a person who loves to make Arduino projects — [send me an email](mailto:feedback@lopaka.app) and share all your thougts. I need to know what my audience pain points are to make Lopaka better.
-
-## We are looking for a sponsor
-
-See [GitHub sponsorship options](https://github.com/sponsors/sbrin) ❤️
-
-Feel free to contact us [info@lopaka.app](mailto:info@lopaka.app) ❤️
+1. **Clone the fork:**
+   ```bash
+   git clone https://github.com
+   cd lopaka
