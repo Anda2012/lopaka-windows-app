@@ -42,6 +42,6 @@ If you want to build the app from source, ensure you have [pnpm](https://pnpm.io
    bashpnpm dev
 4. **Build for production:**
    ```bash
-   bashpnpm build
+   pnpm run build:exe
 ### Credits: 
 This project is a fork of the original Lopaka editor. Huge thanks to the original creators and contributors:Original Creator: sbrinTop Contributors: deadlink, gaai, alploskov, bjorndFor the full list of original contributors, see the original contributors graph.💬 Feedback & SupportIf you encounter issues specific to the App Port, please submit an Issue in this repository.For general editor feedback or to join the community:Join the DiscordFollow on TwitterSupport the original creator via GitHub Sponsorship
