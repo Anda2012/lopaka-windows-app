@@ -1,18 +1,16 @@
 {
   "name": "lopaka",
-  "version": "0.45",
+  "version": "0.45.0",
   "description": "Embedded graphics editor with code builder",
-  "main": "index.html",
+  "main": "main.cjs",
   "type": "module",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
     "dev": "vite",
     "test": "vitest --mode test --run",
     "test-dev": "vitest --mode test",
     "test-report": "vitest --coverage.enabled true --run",
     "build": "vitepress build pages && vite build",
+    "build:exe": "pnpm build && electron-builder --win portable",
     "docs:dev": "vitepress dev pages",
     "docs:build": "vitepress build pages",
     "docs:preview": "vitepress preview pages",
@@ -20,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sbrin/lopaka.git"
+    "url": "git+https://github.com"
   },
   "keywords": [
     "embedded",
@@ -34,9 +32,9 @@
   "author": "sbrin",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/sbrin/lopaka/issues"
+    "url": "https://github.com"
   },
-  "homepage": "https://github.com/sbrin/lopaka#readme",
+  "homepage": "https://github.com",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.13",
     "@vitejs/plugin-basic-ssl": "^2.0.0",
@@ -46,6 +44,8 @@
     "@vue/test-utils": "^2.4.1",
     "autoprefixer": "^10.4.19",
     "daisyui": "^4.11.1",
+    "electron": "^41.2.0",
+    "electron-builder": "^26.8.1",
     "husky": "^9.0.11",
     "jsdom": "^26.1.0",
     "prettier": "^3.0.3",
@@ -67,11 +67,21 @@
     "pug": "^3.0.2",
     "truetype2gfx": "*",
     "typescript": "^5.2.2",
-    "ui@latest": "link:vitest/ui@latest",
     "vue": "^3.5.29",
     "vue-router": "^4.4.0",
     "vue3-ace-editor": "^2.2.4",
     "vuedraggable": "^4.1.0"
   },
-  "packageManager": "pnpm@10.30.3"
+  "packageManager": "pnpm@10.30.3",
+  "build": {
+    "appId": "com.lopaka.app",
+    "productName": "Lopaka",
+    "files": [
+      "dist/**/*",
+      "main.cjs"
+    ],
+    "directories": {
+      "output": "release"
+    }
+  }
 }
